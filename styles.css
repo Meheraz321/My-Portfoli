@@ -1,0 +1,153 @@
+ 
+
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+}
+
+.profile-pic {
+  width: 20px;
+  height: 10px;
+  border-radius: 30%;
+  border: 3px solid white;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  color: #444;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark nav {
+  background-color: #1e1e1e;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+}
+
+body.dark section {
+  background-color: #2a2a2a;
+}
+
+body.dark footer {
+  background-color: #1e1e1e;
+}
+
+#darkModeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 8px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#darkModeToggle:hover {
+  background-color: #666;
+}
