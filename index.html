@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+
   <!-- Navigation Menu -->
   <nav>
     <ul>
@@ -19,20 +22,20 @@
   </nav>
 
   <!-- Header Section -->
-  <header>
+  <header class="fade-in">
     <img src="https://assets.onecompiler.app/43fezndh5/43ff3je96/1738684900886.jpg" alt="Profile" class="profile-pic" />
     <h1>Hi, I'm Meheraz Hosen</h1>
     <p>I'm a Web Developer</p>
   </header>
 
   <!-- About Section -->
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
     <p>I’m a beginner learning how to build websites using HTML, CSS, and JavaScript.</p>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>My Projects</h2>
     <ul>
       <li><a href="https://github.com/yourprofile/project1" target="_blank">Project 1 - Portfolio Website</a></li>
@@ -40,19 +43,23 @@
     </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
+  <!-- Contact Form Section -->
+  <section id="contact" class="fade-in">
     <h2>Contact Me</h2>
-    <p>Email: mdmeherazhosen44@email.com</p>
-    <button onclick="alert('Thanks for clicking!')">Say Hello</button>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Assalamu Alaikum" rows="5" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
-  <!-- Social Media Section -->
-  <section id="social">
+  <!-- Social Section -->
+  <section id="social" class="fade-in">
     <h2>Follow Me</h2>
     <p>
-      <a href="https://www.facebook.com/mdmeheraz.hosen.10" target="_blank">Facebook</a> |
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+      <a href="https://facebook.com/mdmeheraz.hosen.10" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/meherazhosen4?igsh=MTBsNDlwZXhmZzN6Ng==" target="_blank">instagram</a> |
       <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
     </p>
   </section>
@@ -65,6 +72,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-<!-- Add this inside <body>, before <nav> -->
-<button id="darkModeToggle">Toggle Dark Mode</button>
